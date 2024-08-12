@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedIn Page</title>
+    <!-- Font Awesome Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./Style/CssUtilities.css">
+
+    <style>
+        nav
+        {
+           display: flex;
+           background-color: white;
+           margin: 5px;
+           padding: 8px;
+        }
+
+        nav > .Logo > img
+        {
+            width: 35px;
+            height: 35px;
+            margin-right: 5px;
+            /* background-color: white;
+             */
+        }
+
+        nav > .searchBar
+        {
+            border: 0px solid black;
+            display: inline;
+            padding: 5px;
+            width: 200px;
+            
+        }
+        nav > .searchBar > input
+        {
+            border: none;
+            padding: 3.5px;
+            
+        }
+
+        nav > .icons
+        {
+            display: flex;
+            float: right;
+        }
+
+        nav > .icons > span > img
+        {
+            width: 35px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="Logo">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuRQpMPBTumILiPdFxG2Xa7eY5Cgsvtiv5WA&s" alt="LinkedIn Logo">
+            </div>
+            <div class="searchBar">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="icons">
+                <span>
+                    <i class="fa-solid fa-house"></i>
+                    <br>
+                    <p>Home</p>
+                </span>
+                <span>
+                    <i class="fa-solid fa-users"></i>
+                    <br>
+                    <p>My Networks</p>
+                </span>
+                <span>
+                    <i class="fa-solid fa-suitcase"></i>
+                    <br>
+                    <p>Jobs</p>
+                </span>
+                <span>
+                    <i class="fa-solid fa-comment"></i>
+                    <br>
+                    <p>Messaging</p>
+                </span>
+                <span>
+                    <i class="fa-solid fa-bell"></i>
+                    <br>
+                    <p>Notification</p>
+                </span>
+                <span>
+                    <img src="https://www.pngall.com/wp-content/uploads/5/Profile-Transparent.png" alt="Profile">
+                    <br>
+                    <i class="fa-solid fa-caret-down"></i>
+                </span>
+                <span>
+                   <p>Try Premium Free For 1</p>
+                   
+                   <p>Month</p>
+                </span>
+               
+            </div>
+        </nav>
+    </div>
+</body>
+</html>
