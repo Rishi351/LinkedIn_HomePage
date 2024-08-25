@@ -8,102 +8,230 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="./Style/CssUtilities.css">
+    <link rel="stylesheet" href="./Style/style.css">
 
-    <style>
-        nav
-        {
-           display: flex;
-           background-color: white;
-           margin: 5px;
-           padding: 8px;
-        }
-
-        nav > .Logo > img
-        {
-            width: 35px;
-            height: 35px;
-            margin-right: 5px;
-            /* background-color: white;
-             */
-        }
-
-        nav > .searchBar
-        {
-            border: 0px solid black;
-            display: inline;
-            padding: 5px;
-            width: 200px;
-            
-        }
-        nav > .searchBar > input
-        {
-            border: none;
-            padding: 3.5px;
-            
-        }
-
-        nav > .icons
-        {
-            display: flex;
-            float: right;
-        }
-
-        nav > .icons > span > img
-        {
-            width: 35px;
-        }
-
-    </style>
-</head>
+   
+    
+</head> 
 <body>
+<!-- In this website have some confusing things like 
+class head is header
+class s2 is top right side contain
+class main is left side contain
+class footer is bottom right side contain
+class s1 is main center post -->
+
     <div class="container">
-        <nav>
+    <nav> 
+       <!-- this is the navigation bar in which have logo, search bar, icons etc -->
             <div class="Logo">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuRQpMPBTumILiPdFxG2Xa7eY5Cgsvtiv5WA&s" alt="LinkedIn Logo">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuRQpMPBTumILiPdFxG2Xa7eY5Cgsvtiv5WA&s" alt="LinkedIn Logo" >
             </div>
             <div class="searchBar">
                 <i class="fa-solid fa-magnifying-glass"></i>
                 <input type="text" placeholder="Search">
             </div>
             <div class="icons">
-                <span>
+                <span class="item">
+                    <a href="#">
                     <i class="fa-solid fa-house"></i>
                     <br>
                     <p>Home</p>
+                    </a>
                 </span>
-                <span>
+                <span class="item">
+                    <a href="#">
                     <i class="fa-solid fa-users"></i>
                     <br>
                     <p>My Networks</p>
+                    </a>
                 </span>
-                <span>
+                <span class="item"> 
+                    <a href="#">
                     <i class="fa-solid fa-suitcase"></i>
                     <br>
                     <p>Jobs</p>
+                     </a>
                 </span>
-                <span>
+                <span class="item">
+                    <a href="#">
                     <i class="fa-solid fa-comment"></i>
                     <br>
                     <p>Messaging</p>
+                </a>
                 </span>
-                <span>
+                <span class="item">
+                    <a href="#">
                     <i class="fa-solid fa-bell"></i>
                     <br>
                     <p>Notification</p>
+                    </a>
                 </span>
-                <span>
+                <span class="item" id="profile">
                     <img src="https://www.pngall.com/wp-content/uploads/5/Profile-Transparent.png" alt="Profile">
                     <br>
                     <i class="fa-solid fa-caret-down"></i>
                 </span>
-                <span>
+                <span class="item">
+                    <a href="#">
                    <p>Try Premium Free For 1</p>
                    
                    <p>Month</p>
+                    </a>
                 </span>
                
             </div>
         </nav>
+    <!-- this is the main body container  -->
+        <div class="container-grid">
+          <!-- this is the main header of the this page which have profile, search bar for posting the image vidoes,articles,etc  -->
+            <div class="page head">
+                <div class="img-inp">
+                    <img src="https://www.pngall.com/wp-content/uploads/5/Profile-Transparent.png" alt="Profile" width="50px">
+                    <input type="text" placeholder="Start a Post">
+                </div>
+              <div class="icons2">
+                <span>
+                    
+                    <i class="fa-regular fa-image" style="color: rgb(2, 242, 255);"></i>
+                     <span>Photo</span> 
+                  
+                </span>
+                <span>
+                   
+                        <i class="fa-solid fa-video" style="color: rgb(7, 248, 27);"></i>
+                        <span>Video</span>
+                   
+                </span>
+                <span>
+                   
+                        <i class="fa-solid fa-calendar" style="color: rgb(165, 126, 42);"></i>
+                        <span>Event</span>
+                <span>
+                  
+                        <i class="fa-solid fa-newspaper" style="color: pink;"></i>
+                        <span>Write Article</span>
+                </span>
+              </div>
+               </div>
+               <!-- this is main contain and post of the this page which have inclued logo, image, like share comments buttoms. -->
+            <div class="page s1">
+
+                <img src="https://logos-world.net/wp-content/uploads/2020/06/Accenture-Emblem.png" alt="Accenture Logo" >
+                <span id="doted">...</span>
+              <div class="likedin">
+                <h3>Accenture</h3>
+                <p>Promoted</p>
+              </div>
+              <p class="para graph">Start the next phase of your career with one of the world's best consulting</p>
+              <p class="para">leveraging artificial intelligence</p>
+              <img class="accen" src="./Accenture.jpg" alt="Accenture post">
+
+              <div class="apply">
+                <Button>Apply</Button>
+                <span>Work at the heart of AI </span>
+                <br>
+                <a href="#">Accenture.com</a>
+              </div>
+              <br>
+              <p class="likes">3k Likes . 9 Comments</p>
+              <div class="post2">
+              <img class="post" src="https://www.pngall.com/wp-content/uploads/5/Profile-Transparent.png" alt="Profile" >
+              <p>108</p>
+            </div>
+            
+            <hr>
+            <div class="repost">
+              <span>
+                <i class="fa-solid fa-thumbs-up"></i>
+                <span>Like</span>
+              </span>
+              <span>
+                <i class="fa-solid fa-comment"></i>
+                <span>Comments</span>
+              </span>
+              <span>
+                <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                <span>Repost</span>
+              </span>
+              <span>
+                <i class="fa-solid fa-paper-plane"></i>
+                <span>Send</span>
+              </span>
+            </div>
+            </div>
+            <!-- this is the left side conatain which have profile details and many more. -->
+            <div class="page main">
+              <div class="profile">
+                <img src="https://www.pngall.com/wp-content/uploads/5/Profile-Transparent.png" alt="Profile">
+                <h3>Rishi Getme</h3>
+                <p>Full Stack Developer at skill Academy</p>
+              </div>  
+              <hr>
+              <div class="views">
+                <h4>Connectios <p>30</p></h4>
+                <h3>Grow Your Network</h3>
+                <br>
+                <h4>Who Viewed Your Profile <p>50</p></h4> 
+              </div>
+              <hr>
+              <div class="premium-offer">
+              <p>Grow your career with Premium</p>
+              <h4>Try Premium for $20</h4>
+              </div>
+              <hr>
+              <div class="recent">
+                <h4>Recent</h4>
+                <p># TensorFlow</p>
+                <p># TensorFlow</p>
+                <p># TensorFlow</p>
+                <p># TensorFlow</p>
+                <p># TensorFlow</p>
+                <p># TensorFlow</p> 
+                
+                <h4>Follewed Hashtags</h4>
+                <p># TensorFlow</p> 
+                <p># TensorFlow</p> 
+                <p># TensorFlow</p> 
+              </div>
+            </div>
+            <!-- this is the top rigt side contain which have recent news -->
+            <div class="page s2">
+                <h4>Linkin News</h4>
+                <i class="fa-solid fa-circle-exclamation"></i>
+
+                <div class="list-news">
+                    <ul>
+                        <li>India Crosses 3.54.622 daily cases</li>
+                        <p>10hr ago. 5642 views</p>
+                        <li>Zomato flies for $3.5b IPO</li>
+                        <p>5he ago. 66652 views</p>
+                        <li>Jobs pay in IT soars</li>
+                        <p>1d ago. 562224 views</p>
+                        <li>Google saving $1b from WFH</li>
+                        <p>3d ago. 5622242 views</p>
+                        <li>Building a career in a Spot</li>
+                        <p>11hr Ago. 522 views</p>
+                        <li>P2P leading under scanner</li>
+                        <p>4d ago. 566245 views</p>
+                        <li>Engineers in demand across sector</li>
+                        <p>5d ago. 95554 views</p>
+                        <li>Small F&B brand go Big</li>
+                        <p>6d ago.665544 views</p>
+                        <li>What to consider when to starting up</li>
+                        <p>9d ago. 95566 views</p>
+                        <li>Benefits of Certificate Courses</li>
+                        <p>6d ago. 55664 views</p>
+                        <h4>See More   <i class="fa-solid fa-caret-down"></i></h4>
+                    </ul>
+                </div>
+            </div>
+            <!-- this is the bottom right contain which have app download link -->
+            <div class="page footer">
+                <i class="fa-solid fa-mobile-screen-button"></i>
+                <a href="#"><p>GET THE LINKEDIN WINDOWS APP</p></a>
+            </div>
+        </div>
     </div>
 </body>
 </html>

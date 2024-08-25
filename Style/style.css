@@ -1,0 +1,328 @@
+/* this is the navigation bar in which have logo, search bar, icons etc  */
+nav
+{
+   display: flex;
+   /* align-items: center; */
+   margin: 10px;
+   padding: 10px;
+   justify-content: center;
+   align-items: center;
+   font-size: 15px;
+
+}
+
+nav > .Logo > img
+{
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+    /* background-color: white;
+     */
+}
+
+nav > .searchBar
+{
+    /* border: 1px solid black; */
+    /* display: inline; */
+    /* padding: 10px; */
+    width: 240px;
+
+}
+nav > .searchBar > input
+{
+    /* border: none; */
+    padding: 3.5px;
+    width: 200px;
+    background-color: rgb(202, 235, 234);
+    height: 25px;
+    
+}
+
+nav > .icons
+{
+    /* background-color: white; */
+    /* margin-left: 150px; */
+    display: flex;
+    margin-left: 130px;
+    
+    
+}
+
+nav > .icons > span > img
+{
+    width: 30px;
+    
+}
+
+nav  .item
+{
+    margin: 6px;
+    text-align: center;
+    
+}
+
+nav  .item > a
+{
+    text-decoration: none;
+    color: black;
+}
+
+nav  .item > a:hover
+{
+    color: gray;
+}
+#profile
+{
+    border-left: 1px solid black;
+    padding-left: 5px;
+    
+}
+/* this is the main body container and this body structure created by grid */
+.container-grid
+{
+   
+    background-color: rgb(201, 200, 200);
+    display: grid;
+    /* width: 100%; */
+    margin: 10px;
+    padding:0 150px 0 150px;
+    height: 100vh;
+   
+    grid-template-areas: 
+    "main header header s2"
+    "main s1 s1 s2"
+    "main s1 s1 footer"
+    "main s1 s1 footer";
+}
+.head
+{
+    grid-area: header;
+   
+}
+.main
+{
+    grid-area: main;
+}
+.s1
+{
+    grid-area: s1;
+}
+.s2
+{
+    grid-area: s2;
+}
+.footer
+{
+    grid-area: footer;
+}
+
+.page
+{
+    border-radius: 10px;
+    background-color: white;
+    margin: 10px;
+}
+/* this is the main header of the this page which have profile, search bar for posting the image vidoes,articles,etc */
+.head > .img-inp{
+    margin:10px;
+    display: flex;
+    justify-content: center;   
+}
+
+.img-inp > input
+{
+    width: 400px;
+    height: 50px;
+    border-radius: 30px;
+    margin-top: 10px;
+}
+.img-inp > img
+{
+    width: 70px;
+    margin-right: 10px;
+}
+
+.head  .icons2
+{
+  display: flex;
+  justify-content:space-around;
+  padding: 10px;
+}
+
+/* this is the top right side contain which have recent news */
+
+.s2{
+    padding: 5px;
+}
+
+.s2 > h4{
+    display: inline;
+}
+.s2 > i{
+    float: right;
+}
+
+.s2 > .list-news
+{
+    padding: 15px;
+    margin-left: 10px;
+}
+.s2 > .list-news li{
+    font-weight: bold;
+}
+.s2 > .list-news p{
+    color: gray;
+    margin-bottom: 15px;
+}
+/* this is the left side conatain which have profile details and many more. */
+.main{
+    padding: 10px;
+}
+
+.main > .profile{
+   text-align: center;
+   margin: 5px;
+   
+}
+.main > .profile img{
+    width: 100px;
+    height: 100px;
+}
+.main > .views{
+display: inline;
+margin: 10px;
+
+}
+.main > .views h3{
+color: gray;
+}
+
+.main > .views p{
+float: right;
+color: rgb(33, 4, 250);
+}
+
+.main > .premium-offer{
+margin: 10px;
+}
+.main > .premium-offer p{
+color: gray;
+}
+
+.main > .recent{
+margin: 10px;
+}
+
+.main > .recent p{
+color: gray;
+margin: 10px;
+}
+
+/* this is the bottom right contain which have app download link */
+.footer{
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 15px;
+}
+.footer > i{
+margin-right: 5px;
+}
+.footer >a{
+text-decoration: none;
+color: rgb(92, 91, 91);
+}
+
+/* this is main contain and post of the this page which have inclued logo, image, like share comments buttoms. */
+.s1{
+position: relative;
+padding: 10px;
+}
+.s1 > img{
+width: 45px;
+}
+
+
+.s1 > .likedin{
+display: inline;
+position: absolute;
+left: 55px;
+bottom: 475px;
+}
+.s1  #doted{
+font-size: 40px;
+position: absolute;
+bottom: 485px;
+left:500px;
+background: none;
+}
+.s1 p{
+color: rgb(85, 84, 84);
+}
+
+.s1 > .para{
+color: black;
+font-weight: bold;
+}
+.s1 > .graph{
+padding-top: 15px;
+}
+
+.s1 > .accen{
+width: 530px;
+padding-top: 5px;
+}
+
+.s1 > .apply {
+background-color: rgb(211, 241, 230);
+padding: 5px;
+}
+
+.s1 > .apply span{
+background:none;
+font-size: 25px;
+font-family: sans-serif;
+/* font-weight:100; */
+
+}
+
+.s1 > .apply button{
+float: right ;
+width: 80px;
+height: 30px;
+background: none;
+border-radius: 30px;
+border: 2px solid blue;
+color: blue;
+font-family: sans-serif;
+font-size: 20px;
+cursor: pointer;
+}
+
+.s1 > .apply a{
+background: none;
+text-decoration: none;
+color: rgb(96, 95, 95);
+}
+
+.s1 > .likes{
+float: right;
+}
+
+.s1 > .post2 .post{
+width:20px;
+padding-right: 5px;
+}
+.s1 > .post2{
+display: flex;
+}
+
+.s1 > .repost{
+display: flex;
+justify-content: space-around;
+} 
+
+.s1 > .repost > span{
+font-size: larger;
+padding-top:15px;
+}
